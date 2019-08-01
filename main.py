@@ -11,3 +11,6 @@ def hello():
 def test():
     name = request.args.get("name", "foo")
     return f'Test, {escape(name)}!!!!'
+
+if __name__ == '__main__':
+    app.run()
