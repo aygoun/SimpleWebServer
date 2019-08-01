@@ -1,0 +1,5 @@
+# Virtual env folder
+venv
+
+# Python compile cache
+__pycache__
