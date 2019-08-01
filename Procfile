@@ -1,1 +1,1 @@
-web: env BIND_ADDRESS=0.0.0.0 python ./main.py
+web: gunicorn app:app --log-file=-
