@@ -1,12 +1,13 @@
-import os
 from flask import Flask, escape, request
 
 app = Flask(__name__)
+
 
 @app.route('/')
 def hello():
     name = request.args.get("name", "World")
     return f'[v2] Hello, {escape(name)}!'
+
 
 @app.route('/test')
 def test():
