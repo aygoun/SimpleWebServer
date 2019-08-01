@@ -1,3 +1,4 @@
+import os
 from flask import Flask, escape, request
 
 app = Flask(__name__)
@@ -13,4 +14,4 @@ def test():
     return f'Test, {escape(name)}!!!!'
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host=os.getenv('BIND_ADDRESS', '127.0.0.1'))
